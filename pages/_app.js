@@ -9,8 +9,10 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import { ThemeProvider } from "../components/ThemeContext";
 import Reveal from "../components/Reveal";
+import SplashPage from "../components/Splash"; // Import your SplashPage component
 
 function MyApp({ Component, pageProps }) {
+  const [showSplash, setShowSplash] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
@@ -30,17 +32,25 @@ function MyApp({ Component, pageProps }) {
     localStorage.setItem("darkMode", darkMode.toString());
   }, [darkMode]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 5000); // Adjust the time as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <ThemeProvider>
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        {/* <Main darkMode={darkMode} />
-      <About darkMode={darkMode} />
-      <Skills darkMode={darkMode} />
-      <Projects darkMode={darkMode} />
-      <Contact darkMode={darkMode} /> */}
-        <Component {...pageProps} />;
-      </ThemeProvider>
+      {showSplash ? (
+        <SplashPage />
+      ) : (
+        <ThemeProvider>
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          {/* Other components */}
+          <Component {...pageProps} />;
+        </ThemeProvider>
+      )}
     </>
   );
 }
