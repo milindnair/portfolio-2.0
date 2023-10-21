@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 // import { useRouter } from 'next/router';
-import NavLogo from '../public/assets/navLogo.png'
+// import NavLogo from '../public/assets/navLogo.png'
 import logolight from '../public/assets/logolight1.png'
 import logolight2 from '../public/assets/logolight2.png'
 import logodark from '../public/assets/logodark3.png'
