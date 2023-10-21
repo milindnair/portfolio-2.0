@@ -33,7 +33,7 @@ const Contact = () => {
 
   const ContactHandler = async (e) => {
     e.preventDefault();
-
+    console.log(formData);
     try {
       const colRef = collection(db, 'contacts');
       await addDoc(colRef, {
