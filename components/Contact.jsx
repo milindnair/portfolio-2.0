@@ -10,7 +10,6 @@ import { collection, addDoc } from 'firebase/firestore';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTheme } from './ThemeContext';
-import contact from '../public/assets/contact.jpg';
 
 const Contact = () => {
   const { darkMode } = useTheme();
