@@ -1,6 +1,6 @@
 .experience {
     margin: 15rem auto;
-    max-width: 700px;
+    max-width: 1200px;
   }
   
   .experience .title {
@@ -15,19 +15,12 @@
     font-weight: 700;
   }
   
-  /* .experience .title h2::before {
-    counter-increment: title;
-    content: "0" counter(title) ".";
-    margin-right: 0.5rem;
-    color: #9d00ff;
-  } */
-  
   .experience .title h2::after {
     content: "";
     display: block;
     position: absolute;
     top: 20px;
-    width: 300px;
+    width: 700px;
     height: 2px;
     margin-left: 380px;
     background-color: #112240;

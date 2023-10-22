@@ -33,8 +33,12 @@ const Contact = () => {
   const ContactHandler = async (e) => {
     e.preventDefault();
     console.log(formData);
+    console.log(db);
+   
     try {
+      console.log("hello");
       const colRef = collection(db, 'contacts');
+      console.log(colRef);
       await addDoc(colRef, {
         name: formData.name,
         phone: formData.phone,
@@ -42,6 +46,7 @@ const Contact = () => {
         subject: formData.subject,
         message: formData.message,
       });
+      console.log('Message sent successfully!');
 
       toast.success('Message sent successfully!');
 

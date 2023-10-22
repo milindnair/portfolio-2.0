@@ -9,7 +9,7 @@ import { useTheme } from './ThemeContext';
 const Main = () => {
   const { darkMode } = useTheme();
   const bgColor = darkMode ? '#1a1a1a' : '#ffffff';
-  const textColor = darkMode ? '#ffffff' : '#1f2937';
+  const textColor = darkMode ? '' : '#1f2937';
 
   
 
@@ -35,7 +35,7 @@ const Main = () => {
             wrapper="span"
             speed={50}
             className={`py-2 text-${textColor}`}
-            style={{ fontSize: '2.25rem', display: 'inline-block' }}
+            style={{ fontSize: '2.25rem', display: 'inline-block' ,  }}
             repeat={Infinity}
           />
 

@@ -45,8 +45,8 @@ function Experience() {
     },
   ];
   return (
-    <motion.div
-    className="experience"
+    <motion.div 
+    className="experience ml-40"
     id="experience"
     initial="hidden"
     whileInView="visible"

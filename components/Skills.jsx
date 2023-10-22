@@ -52,7 +52,7 @@ const Skills = () => {
   }, [controls, inView]);
 
   return (
-    <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full' id="skills">
+    <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full px-6' id="skills">
       <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
         Skills
       </p>
