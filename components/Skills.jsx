@@ -16,6 +16,8 @@ import mysql from '../public/assets/skills/mysql.png';
 import cpp from '../public/assets/skills/c++.png';
 import flutter from '../public/assets/skills/flutter.png';
 import AWS from '../public/assets/skills/aws.png';
+import arduino from '../public/assets/skills/arduino.png';
+
 import { useTheme } from './ThemeContext';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -24,7 +26,7 @@ const Skills = () => {
   const { darkMode } = useTheme();
 
   const cardStyle = {
-    backgroundColor: darkMode ? '#1a202c' : '#ffffff',
+    backgroundColor: darkMode ? '#1a202c' : '',
     color: darkMode ? '#ffffff' : '#1f2937',
     boxShadow: darkMode
       ? '10px 10px 20px #0d1117, -10px -10px 20px #2b303b'
@@ -117,7 +119,9 @@ const skillsData = [
   { name: 'MySQL', image: mysql },
   { name: 'C++', image: cpp },
   { name: 'Flutter', image: flutter },
-  { name: 'AWS', image: AWS },
+  // { name: 'AWS', image: AWS },
+  {name:'Arduino', image: arduino}
+
 ];
 
 export default Skills;

@@ -22,23 +22,7 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const navBg = darkMode ? '#2d2d2d' : '#ecf0f3';
   const linkColor = darkMode ? '#ffffff' : '#1f2937';
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
 
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
 
   useEffect(() => {
     // Apply dark mode styles when darkMode state changes
@@ -111,6 +95,9 @@ const Navbar = () => {
               <Link href='/#skills'>Skills</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#experience'>Experience</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#projects'>Projects</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
@@ -150,7 +137,7 @@ const Navbar = () => {
           nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
         }
       >
-        {/* Side Drawer Menu */}
+   
         <div
           className={
             nav

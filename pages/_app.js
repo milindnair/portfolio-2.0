@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import { ThemeProvider } from "../components/ThemeContext";
 import Reveal from "../components/Reveal";
 import SplashPage from "../components/Splash"; // Import your SplashPage component
+import "../components/experience.css";
 
 function MyApp({ Component, pageProps }) {
   const [showSplash, setShowSplash] = useState(true);

@@ -31,16 +31,17 @@ const SplashPage = ({ onTransitionComplete }) => {
   }, [isMounted, controls]);
 
   return (
+
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 0 }}
       animate={controls}
       transition={{ duration: 1.5 }}
       style={{
         position: 'fixed',
         top: 0,
         left: 0,
-        width: '100%',
-        height: '100%',
+        width: '100vw',
+        height: '100vh',
         background: '#000',
         display: 'flex',
         flexDirection: 'column',
@@ -62,7 +63,7 @@ const SplashPage = ({ onTransitionComplete }) => {
           letterSpacing: '1px',
         }}
       >
-        Jack of all trades, master of none, but a champion of progress.
+        Turning Code into Canvas: Web, Apps, and Beyond
       </motion.p>
     </motion.div>
   );
