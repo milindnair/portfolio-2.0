@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import AboutImg from '../public/assets/about.jpg';
 import myimg from '../public/assets/myimg.png';
 import { useTheme } from './ThemeContext';
 import Reveal from './Reveal';
