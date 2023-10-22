@@ -5,7 +5,6 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import ContactImg from '../public/assets/contact.jpg';
 import { db } from '../firebase/firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { ToastContainer, toast } from 'react-toastify';
@@ -66,11 +65,10 @@ const Contact = () => {
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
         <h2 className='py-4'>Get In Touch</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
-          {/* left */}
           <div className={`col-span-3 lg:col-span-2 w-full h-full shadow-${shadowStyle} shadow-gray-400 rounded-xl p-4`}>
             <div className='lg:p-4 h-full'>
               <div>
-                <Image className='rounded-xl hover:scale-105 ease-in duration-300' src={ContactImg} alt='/' />
+                <Image className='rounded-xl hover:scale-105 ease-in duration-300' src={'/public/assets/contact.jpg'} width={100} height={100} alt='/' />
               </div>
               <div>
                 <h2 className='py-2'>Milind Nair</h2>
