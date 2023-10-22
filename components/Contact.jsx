@@ -10,6 +10,7 @@ import { collection, addDoc } from 'firebase/firestore';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTheme } from './ThemeContext';
+import contact from '../public/assets/contact.jpg';
 
 const Contact = () => {
   const { darkMode } = useTheme();
@@ -68,7 +69,7 @@ const Contact = () => {
           <div className={`col-span-3 lg:col-span-2 w-full h-full shadow-${shadowStyle} shadow-gray-400 rounded-xl p-4`}>
             <div className='lg:p-4 h-full'>
               <div>
-                <Image className='rounded-xl hover:scale-105 ease-in duration-300' src={'/../public/assets/contact.jpg'} width={400} height={300} alt='/' />
+                <Image className='rounded-xl hover:scale-105 ease-in duration-300' src={contact} width={400} height={300} alt='/' />
               </div>
               <div>
                 <h2 className='py-2'>Milind Nair</h2>
